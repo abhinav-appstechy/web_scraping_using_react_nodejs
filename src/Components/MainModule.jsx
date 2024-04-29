@@ -111,7 +111,7 @@ const MainModule = () => {
         </h2>
       </div>
 
-      <div className="flex justify-center m-auto mt-10 gap-8">
+      <div className="lg:flex lg:justify-center m-auto mt-10 lg:gap-8 gap-5 grid justify-items-center">
         <Box
           component="form"
           sx={{
@@ -206,7 +206,7 @@ const MainModule = () => {
                   onChange={handleSearchByBrandName}
                 />
               </div>
-              <div className="grid lg:grid-cols-4 lg:px-5  col-3 m-auto mt-20 gap-5">
+              <div className="grid lg:grid-cols-4 lg:px-5 col-3 m-auto mt-20 gap-5 px-10">
                 {searchResults.map((product, idx) => (
                   <>
                     <Card
