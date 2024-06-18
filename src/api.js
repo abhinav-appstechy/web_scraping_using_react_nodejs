@@ -1,0 +1,1 @@
+export const BACKEND_BASE_URL="https://web-scraping-using-react-nodejs-backend.vercel.app"

@@ -10,9 +10,10 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions } from "@mui/material";
 import Fuse from "fuse.js";
+import { BACKEND_BASE_URL } from "../api";
 
-// const URL = "http://localhost:5000";
-const URL = "https://d059-2401-4900-1c6e-a495-c1d6-524e-7897-aa6c.ngrok-free.app"
+const URL = BACKEND_BASE_URL;
+// const URL = "https://d059-2401-4900-1c6e-a495-c1d6-524e-7897-aa6c.ngrok-free.app"
 
 const MainModule = () => {
   const [minPrice, setMinPrice] = useState("");
@@ -86,7 +87,7 @@ const MainModule = () => {
           return res.json();
         })
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           if (data.status === "success" && data.data.length > 0) {
             setAllSearchResults(data.data);
             setSearchResults(data.data);
